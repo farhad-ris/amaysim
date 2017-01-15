@@ -10,11 +10,37 @@ import UIKit
 
 class LoginPageViewController: UIViewController {
 
+    
+    
+    @IBOutlet var loginButton:              AMButtonRoundedOutlined!
+    @IBOutlet var loginTextField:           AMTextFieldWithIconAndErrorLabel!
+    
+    
+    
     override func viewDidLoad() {
+    
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.hideKeyboardWhenTappedAround()
+        loginButton.addTarget(self, action: #selector(getter: LoginPageViewController.loginButton), for: .editingDidEnd)
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.view.setNeedsLayout()
+        self.view.setNeedsDisplay()
+    }
+    
+    
+    
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        
+        if loginTextField.text == GlobalVariables.LoginCredentioals.MSN {
+            self.performSegue(withIdentifier: "toAccountInformationSegue", sender: self)
+        } else {
+            loginTextField.showError()
+        }
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -22,14 +48,12 @@ class LoginPageViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+
     }
-    */
+ 
 
 }
