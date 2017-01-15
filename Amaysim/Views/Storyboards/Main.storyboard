@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6AK-SQ-itc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lunch Screen View Controller-->
+        <scene sceneID="DBR-Ac-vhi">
+            <objects>
+                <viewController id="6AK-SQ-itc" customClass="LunchScreenViewController" customModule="Amaysim" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sKI-ir-FOv"/>
+                        <viewControllerLayoutGuide type="bottom" id="mI5-Dr-mTf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lpu-CM-eeb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="amaysim-logo" translatesAutoresizingMaskIntoConstraints="NO" id="xmG-zv-mSV">
+                                <rect key="frame" x="87.5" y="312" width="200" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xmG-zv-mSV" secondAttribute="height" multiplier="373:80" id="SXG-5j-v3a"/>
+                                    <constraint firstAttribute="width" constant="200" id="fVs-6B-rTn"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xmG-zv-mSV" firstAttribute="centerX" secondItem="Lpu-CM-eeb" secondAttribute="centerX" id="AUV-4f-Nue"/>
+                            <constraint firstItem="xmG-zv-mSV" firstAttribute="centerY" secondItem="Lpu-CM-eeb" secondAttribute="centerY" id="Brv-mS-MgO"/>
+                            <constraint firstItem="xmG-zv-mSV" firstAttribute="width" secondItem="xmG-zv-mSV" secondAttribute="height" multiplier="373:80" id="baE-jT-6Ic"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="kX4-cF-nZv" kind="show" identifier="toLoginPageSegue" action="showDetailViewController:sender:" id="tU2-ng-VuR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3s3-Ch-j2S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1415" y="101"/>
+        </scene>
+        <!--Login Page View Controller-->
+        <scene sceneID="quu-lX-TeZ">
+            <objects>
+                <viewController id="kX4-cF-nZv" customClass="LoginPageViewController" customModule="Amaysim" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MMO-yb-51d"/>
+                        <viewControllerLayoutGuide type="bottom" id="8iN-Z0-1dD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BIZ-kj-WXX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ie. 0468874507" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZPy-7r-GB4" customClass="AMTextFieldWithIconAndErrorLabel" customModule="Amaysim" customModuleProvider="target">
+                                <rect key="frame" x="25" y="216" width="325" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="MiJ-vl-tD9"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="continue" enablesReturnKeyAutomatically="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="theBackgroundColor">
+                                        <color key="value" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textFontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                        <color key="value" red="0.29028403759999999" green="0.29035085440000002" blue="0.28637155889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textFontColor">
+                                        <color key="value" red="0.40398332479999999" green="0.40014055370000001" blue="0.39616027469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                                        <color key="value" red="0.84227615590000005" green="0.22066606580000001" blue="0.39222910999999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="errorSpacing">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="ErrorString" value="The MSN number provided is not correct"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="TitleString" value="Please provide the MSN number"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="titleSpacing">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="errorLocation">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.60790044070000004" green="0.60390740629999995" blue="0.60789734129999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.60790044070000004" green="0.60390740629999995" blue="0.60789734129999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftIcon" value="hashtag"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ErrorFontSize">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="TitleFontSize">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgs-cF-kVJ" customClass="AMButtonRoundedOutlined" customModule="Amaysim" customModuleProvider="target">
+                                <rect key="frame" x="137.5" y="397" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="7kv-ea-Rkr"/>
+                                    <constraint firstAttribute="height" constant="30" id="zrn-Zr-lEd"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.35978430509999998" green="0.55830889939999995" blue="0.85888099669999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.35978430509999998" green="0.55830889939999995" blue="0.85888099669999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="kX4-cF-nZv" eventType="touchUpInside" id="R7n-sh-SEU"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="amaysim-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Mau-ZQ-aGF">
+                                <rect key="frame" x="87" y="66" width="200" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Mau-ZQ-aGF" secondAttribute="height" multiplier="373:80" id="6eJ-5I-bBN"/>
+                                    <constraint firstAttribute="width" constant="200" id="HT6-KO-d0P"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZPy-7r-GB4" firstAttribute="centerX" secondItem="BIZ-kj-WXX" secondAttribute="centerX" id="062-mN-RK2"/>
+                            <constraint firstItem="Bgs-cF-kVJ" firstAttribute="top" secondItem="ZPy-7r-GB4" secondAttribute="bottom" constant="136" id="24x-gz-5Jw"/>
+                            <constraint firstItem="Bgs-cF-kVJ" firstAttribute="centerX" secondItem="ZPy-7r-GB4" secondAttribute="centerX" id="Kbv-c6-sB2"/>
+                            <constraint firstItem="ZPy-7r-GB4" firstAttribute="width" secondItem="BIZ-kj-WXX" secondAttribute="width" constant="-50" id="RIr-AH-1F5"/>
+                            <constraint firstItem="Mau-ZQ-aGF" firstAttribute="top" secondItem="MMO-yb-51d" secondAttribute="bottom" constant="46" id="oOT-9j-Sq9"/>
+                            <constraint firstItem="Mau-ZQ-aGF" firstAttribute="centerX" secondItem="BIZ-kj-WXX" secondAttribute="centerX" id="qoa-gY-I0q"/>
+                            <constraint firstItem="ZPy-7r-GB4" firstAttribute="top" secondItem="MMO-yb-51d" secondAttribute="bottom" constant="196" id="tGU-Fd-dWW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="Bgs-cF-kVJ" id="ceF-yd-d9p"/>
+                        <outlet property="loginTextField" destination="ZPy-7r-GB4" id="yF9-F0-0Vj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ql5-Ew-7S8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-356" y="101.19940029985008"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="amaysim-logo" width="373" height="80"/>
+        <image name="hashtag" width="224" height="208"/>
+    </resources>
+</document>
