@@ -28,7 +28,6 @@
 		C4CB6DD41E26E7C800399DAF /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB6DD31E26E7C800399DAF /* Strings.swift */; };
 		C4DF24CF1E2B0F7200FD8C55 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF24CE1E2B0F7200FD8C55 /* LoginPageViewController.swift */; };
 		C4DF24D11E2B200400FD8C55 /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF24D01E2B200400FD8C55 /* AccountTableViewController.swift */; };
-		C4DF24D31E2B24C700FD8C55 /* Serializeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF24D21E2B24C700FD8C55 /* Serializeable.swift */; };
 		C4DF24D51E2B35BE00FD8C55 /* ServiceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF24D41E2B35BE00FD8C55 /* ServiceTableViewController.swift */; };
 		C4DF24D71E2B39C700FD8C55 /* SubscriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF24D61E2B39C700FD8C55 /* SubscriptionTableViewController.swift */; };
 		C4DF24D91E2B3B3500FD8C55 /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF24D81E2B3B3500FD8C55 /* ProductsTableViewController.swift */; };
@@ -80,7 +79,6 @@
 		C4CB6DD31E26E7C800399DAF /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		C4DF24CE1E2B0F7200FD8C55 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginPageViewController.swift; path = Amaysim/ViewControllers/LoginPageViewController.swift; sourceTree = "<group>"; };
 		C4DF24D01E2B200400FD8C55 /* AccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountTableViewController.swift; path = Amaysim/ViewControllers/TableViewControllers/AccountTableViewController.swift; sourceTree = "<group>"; };
-		C4DF24D21E2B24C700FD8C55 /* Serializeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Serializeable.swift; path = Models/Helpers/Serializeable.swift; sourceTree = "<group>"; };
 		C4DF24D41E2B35BE00FD8C55 /* ServiceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceTableViewController.swift; path = Amaysim/ViewControllers/TableViewControllers/ServiceTableViewController.swift; sourceTree = "<group>"; };
 		C4DF24D61E2B39C700FD8C55 /* SubscriptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscriptionTableViewController.swift; path = Amaysim/ViewControllers/TableViewControllers/SubscriptionTableViewController.swift; sourceTree = "<group>"; };
 		C4DF24D81E2B3B3500FD8C55 /* ProductsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductsTableViewController.swift; path = Amaysim/ViewControllers/TableViewControllers/ProductsTableViewController.swift; sourceTree = "<group>"; };
@@ -248,7 +246,6 @@
 		C4CB6DCE1E26AAE700399DAF /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				C4DF24D21E2B24C700FD8C55 /* Serializeable.swift */,
 				C4CB6DCC1E26AA3000399DAF /* JsonResponseTranslation.swift */,
 			);
 			name = Helpers;
@@ -403,7 +400,6 @@
 				C4CB6DC81E265CF200399DAF /* Subscriptions.swift in Sources */,
 				C4C2B8BF1E26FB2F00962EBE /* Data.swift in Sources */,
 				C4DF24D11E2B200400FD8C55 /* AccountTableViewController.swift in Sources */,
-				C4DF24D31E2B24C700FD8C55 /* Serializeable.swift in Sources */,
 				C4A863701E2B096C00C8A563 /* LunchScreenViewController.swift in Sources */,
 				C4CB6DCA1E2666EF00399DAF /* Services.swift in Sources */,
 				C4CB6DCD1E26AA3000399DAF /* JsonResponseTranslation.swift in Sources */,
