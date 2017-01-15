@@ -61,15 +61,12 @@ class ProductsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "productReuseIdentifier", for: indexPath)
         cell.textLabel?.text =                          keys[indexPath.row]
-//        if indexPath.row == keys.count - 1 {
-//            cell.detailTextLabel?.text =                product.relatedProducts?[0].id
-//            cell.accessoryType =                        .disclosureIndicator
-//            cell.selectionStyle =                       .blue
-//            
-//        } else {
+
             cell.detailTextLabel?.text =                members[keys[indexPath.row]]
             cell.selectionStyle =                       .none
-//        }
+        if keys[indexPath.row] == "price" {
+            cell.detailTextLabel?.text =             "$\(Double(product.price!) / 100.0)"
+        }
         return cell
     }
     

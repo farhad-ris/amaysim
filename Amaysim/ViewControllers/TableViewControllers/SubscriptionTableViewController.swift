@@ -59,7 +59,7 @@ class SubscriptionTableViewController: UITableViewController {
             cell.detailTextLabel?.text =                members[keys[indexPath.row]]
             cell.selectionStyle =                       .none
             if keys[indexPath.row] == "includedDataBalance" {
-                cell.detailTextLabel?.text =             "\(subscription.includedDataBalance! / 1024)GB"
+                cell.detailTextLabel?.text =             "\(Double(subscription.includedDataBalance!) / 1024.0) GB"
             }
 
         }
