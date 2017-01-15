@@ -7,12 +7,30 @@
 //
 
 import UIKit
+import Foundation
 
 class AccountTableViewController: UITableViewController {
 
+    
+    let account =                           Accounts.sharedInstance
+    let keys =                              [ "title", "firstName", "lastName", "dateOfBirth", "contactNumber", "email", "relatedServices"]
+    var members: [String: String] =         [:]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let mirrored_object = Mirror(reflecting: account)
+        
+        for (index, attr) in mirrored_object.children.enumerated() {
+            if let property_name = attr.label as String! {
+                members["\(property_name)"] = "\(attr.value)"
+                print("Attr \(index): \(property_name) = \(attr.value)")
+            }
+        }
+        
+        
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -29,23 +47,35 @@ class AccountTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return keys.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "accountsReuseIdentifier", for: indexPath)
+        cell.textLabel?.text =                          keys[indexPath.row]
+        if indexPath.row == keys.count - 1 {
+            cell.detailTextLabel?.text =                account.relatedServices?[0].MSN
+            cell.accessoryType =                        .disclosureIndicator
+            cell.selectionStyle =                       .blue
 
-        // Configure the cell...
-
+        } else {
+            cell.detailTextLabel?.text =                members[keys[indexPath.row]]
+            cell.selectionStyle =                       .none
+        }
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == keys.count - 1 {
+            self.performSegue(withIdentifier: "toServicesTableVCSegue", sender: self)
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.
