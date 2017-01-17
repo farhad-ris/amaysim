@@ -11,7 +11,7 @@ import Foundation
 struct Constants {
     struct ServerInformation {
         static let ServerUrl = URL(string: "http://0.0.0.0:5000/json")
-        static let ServerUrlFromMobile = URL(string: "http://10.0.0.62:5000/json")
+        static let ServerUrlFromMobile = URL(string: "http://10.0.0.67:5000/json")
 
 }
 }

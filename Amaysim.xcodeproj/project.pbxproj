@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C49FD1A91E260D800016268F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49FD1A81E260D800016268F /* AppDelegate.swift */; };
 		C49FD1B01E260D800016268F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C49FD1AF1E260D800016268F /* Assets.xcassets */; };
-		C49FD1BE1E260D800016268F /* AmaysimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49FD1BD1E260D800016268F /* AmaysimTests.swift */; };
 		C49FD1C91E260D800016268F /* AmaysimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49FD1C81E260D800016268F /* AmaysimUITests.swift */; };
 		C49FD1D71E2613470016268F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49FD1D61E2613470016268F /* Main.storyboard */; };
 		C49FD1DD1E2614600016268F /* AMTextFieldWithIconAndErrorLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49FD1DC1E2614600016268F /* AMTextFieldWithIconAndErrorLabel.swift */; };
@@ -26,6 +25,8 @@
 		C4CB6DCD1E26AA3000399DAF /* JsonResponseTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB6DCC1E26AA3000399DAF /* JsonResponseTranslation.swift */; };
 		C4CB6DD21E26E78300399DAF /* Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB6DD11E26E78300399DAF /* Dates.swift */; };
 		C4CB6DD41E26E7C800399DAF /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB6DD31E26E7C800399DAF /* Strings.swift */; };
+		C4CE8DCB1E2E299600DE7E56 /* JsonResponseTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CE8DCA1E2E299600DE7E56 /* JsonResponseTranslation.swift */; };
+		C4CE8DCD1E2E30F800DE7E56 /* Randomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CE8DCC1E2E30F800DE7E56 /* Randomizer.swift */; };
 		C4DF24CF1E2B0F7200FD8C55 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF24CE1E2B0F7200FD8C55 /* LoginPageViewController.swift */; };
 		C4DF24D11E2B200400FD8C55 /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF24D01E2B200400FD8C55 /* AccountTableViewController.swift */; };
 		C4DF24D51E2B35BE00FD8C55 /* ServiceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF24D41E2B35BE00FD8C55 /* ServiceTableViewController.swift */; };
@@ -56,7 +57,6 @@
 		C49FD1AF1E260D800016268F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C49FD1B41E260D800016268F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C49FD1B91E260D800016268F /* AmaysimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmaysimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C49FD1BD1E260D800016268F /* AmaysimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmaysimTests.swift; sourceTree = "<group>"; };
 		C49FD1BF1E260D800016268F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C49FD1C41E260D800016268F /* AmaysimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmaysimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C49FD1C81E260D800016268F /* AmaysimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmaysimUITests.swift; sourceTree = "<group>"; };
@@ -77,6 +77,8 @@
 		C4CB6DCC1E26AA3000399DAF /* JsonResponseTranslation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JsonResponseTranslation.swift; path = Models/Helpers/JsonResponseTranslation.swift; sourceTree = "<group>"; };
 		C4CB6DD11E26E78300399DAF /* Dates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dates.swift; sourceTree = "<group>"; };
 		C4CB6DD31E26E7C800399DAF /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		C4CE8DCA1E2E299600DE7E56 /* JsonResponseTranslation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonResponseTranslation.swift; sourceTree = "<group>"; };
+		C4CE8DCC1E2E30F800DE7E56 /* Randomizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Randomizer.swift; path = AmaysimTests/Randomizer.swift; sourceTree = SOURCE_ROOT; };
 		C4DF24CE1E2B0F7200FD8C55 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginPageViewController.swift; path = Amaysim/ViewControllers/LoginPageViewController.swift; sourceTree = "<group>"; };
 		C4DF24D01E2B200400FD8C55 /* AccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountTableViewController.swift; path = Amaysim/ViewControllers/TableViewControllers/AccountTableViewController.swift; sourceTree = "<group>"; };
 		C4DF24D41E2B35BE00FD8C55 /* ServiceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceTableViewController.swift; path = Amaysim/ViewControllers/TableViewControllers/ServiceTableViewController.swift; sourceTree = "<group>"; };
@@ -147,7 +149,8 @@
 		C49FD1BC1E260D800016268F /* AmaysimTests */ = {
 			isa = PBXGroup;
 			children = (
-				C49FD1BD1E260D800016268F /* AmaysimTests.swift */,
+				C4CE8DCC1E2E30F800DE7E56 /* Randomizer.swift */,
+				C4CE8DCA1E2E299600DE7E56 /* JsonResponseTranslation.swift */,
 				C49FD1BF1E260D800016268F /* Info.plist */,
 			);
 			path = AmaysimTests;
@@ -414,7 +417,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C49FD1BE1E260D800016268F /* AmaysimTests.swift in Sources */,
+				C4CE8DCB1E2E299600DE7E56 /* JsonResponseTranslation.swift in Sources */,
+				C4CE8DCD1E2E30F800DE7E56 /* Randomizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

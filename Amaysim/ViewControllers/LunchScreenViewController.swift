@@ -20,7 +20,7 @@ class LunchScreenViewController: UIViewController {
         
         
         //        let server = Constants.ServerInformation.ServerUrl
-        let server = Constants.ServerInformation.ServerUrlFromMobile
+        let server = Constants.ServerInformation.ServerUrl
         
         
         
